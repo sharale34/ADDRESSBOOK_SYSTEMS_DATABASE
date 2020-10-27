@@ -42,7 +42,14 @@ INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) 
 ```SELECT * FROM address_book;```
 
 ## UC5 - Ability To Delete Existing Contact with Name
-```DELETE FROM address_book WHERE firstName='K L';
+```DELETE FROM address_book WHERE firstName='K L';```
 
 ### View address book
 ```SELECT * FROM address_book;```
+
+## UC6 - Ability to Retrieve Person belonging to a City or State
+### Contact of person belonging to particular city
+```SELECT * FROM address_book WHERE City='Chennai';```
+
+### Contact of person belonging to particular state
+```SELECT * FROM address_book WHERE State='Tamil Nadu';```
