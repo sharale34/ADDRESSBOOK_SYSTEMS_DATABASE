@@ -17,7 +17,7 @@
     ->   Phone Number INT(15)      NOT NULL,
     ->   Email        VARCHAR(300) NOT NULL,
     ->   PRIMARY KEY  (firstName)
-    -> );```
-
+    -> );
+```
 ### Viewing the address book table
 ```DESCRIBE address_book;```
