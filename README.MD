@@ -40,3 +40,9 @@ INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) 
 
 ### View address book
 ```SELECT * FROM address_book;```
+
+## UC5 - Ability To Delete Existing Contact with Name
+```DELETE FROM address_book WHERE firstName='K L';
+
+### View address book
+```SELECT * FROM address_book;```
