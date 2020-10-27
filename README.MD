@@ -75,3 +75,5 @@ UPDATE address_book SET address_book_name='IPLT20', Ttype='family' WHERE firstNa
 UPDATE address_book SET address_book_name='IPLT20', Type='profession' WHERE firstName='Rohit';
 SELECT * FROM address_book;
 ```
+## UC10 - Count Person in Address Book by Type
+```SELECT Type, COUNT(firstName) FROM address_book GROUP BY Type;```
