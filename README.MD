@@ -64,3 +64,14 @@ INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) 
 ## UC8 - Ability to retrieve entries sorted alphabetically by Person’s name for a given city
 ### For a given city, sort contacts in alphabetical order
 ```SELECT * FROM address_book WHERE city='Chennai' ORDER BY firstName;```
+
+## UC9 - Alter Address Book to add Name and Type
+```
+ALTER TABLE address_book ADD address_book_name VARCHAR(20) NOT NULL;
+ALTER TABLE address_book ADD Type VARCHAR(20) NOT NULL;
+DESCRIBE address_book;
+UPDATE address_book SET address_book_name='IPLT20' , Type='friends' WHERE firstName='M S';
+UPDATE address_book SET address_book_name='IPLT20', Ttype='family' WHERE firstName='Virat';
+UPDATE address_book SET address_book_name='IPLT20', Type='profession' WHERE firstName='Rohit';
+SELECT * FROM address_book;
+```
