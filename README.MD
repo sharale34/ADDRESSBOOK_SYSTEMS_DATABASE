@@ -32,3 +32,10 @@
 ```
 ### View address book
 ```SELECT * FROM address_book;```
+
+## UC4 - Ability To Edit Existing Contact with Name
+### Editing contact for given name
+```UPDATE address_book SET phone=9491041559 WHERE firstName='K L';```
+
+### View address book
+```SELECT * FROM address_book;```
