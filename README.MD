@@ -77,3 +77,10 @@ SELECT * FROM address_book;
 ```
 ## UC10 - Count Person in Address Book by Type
 ```SELECT Type, COUNT(firstName) FROM address_book GROUP BY Type;```
+
+## UC11 - Ability to add person to both Friend and Family
+```
+INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email,Type,AddressBookName) VALUES
+    -> ('David','Warner','Alwal','Hyderabad','Telangana',500010,949123455,'davidbhai@gmail.com','Family','IPLT20'),
+    -> ('Shreyas','Iyer','Karol Bagh','Delhi','Delhi',400125,9874651232,'shreyas@gmail.com','Friends','IPLT2O');
+```
