@@ -17,7 +17,18 @@
     ->   Phone Number INT(15)      NOT NULL,
     ->   Email        VARCHAR(300) NOT NULL,
     ->   PRIMARY KEY  (firstName)
-    -> );```
+    -> );
+```
 
 ### Viewing the address book table
 ```DESCRIBE address_book;```
+
+## UC3 - Insert new contacts to address book
+```INSERT INTO address_book(firstName,lastName,Address,City,State,Zip,Phone,Email) VALUES
+    -> ('Virat','Kohli','Shivaji Nagar','Bangalore','Karnataka',560001,9494118273,'virat@gmail.com'),
+    -> ('Rohit','Sharma','Anderi','Mumbai','Maharashtra',400001,7207020464,'rohit@gmail.com');
+    -> ('M S','Dhoni','Balaji Nagar','Chennai','Tamil Nadu',600001,9440293758,'msdhoni@gmail.com');
+    -> ('K L','Rahul','Sarojini Bagh','Chandigarh','Punjab',430001,8341127689,'rahul@gmail.com');
+
+### View address book
+```SELECT * FROM address_book;```
