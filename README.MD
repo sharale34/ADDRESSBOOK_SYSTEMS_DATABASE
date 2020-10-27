@@ -29,6 +29,6 @@
     -> ('Rohit','Sharma','Anderi','Mumbai','Maharashtra',400001,7207020464,'rohit@gmail.com');
     -> ('M S','Dhoni','Balaji Nagar','Chennai','Tamil Nadu',600001,9440293758,'msdhoni@gmail.com');
     -> ('K L','Rahul','Sarojini Bagh','Chandigarh','Punjab',430001,8341127689,'rahul@gmail.com');
-
+```
 ### View address book
 ```SELECT * FROM address_book;```
